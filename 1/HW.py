@@ -60,7 +60,7 @@
 n = int(input("Enter a first value: "))
 m = int(input("Enter a second value: "))
 k = int(input("Enter a quantity of pieces: "))
-if k % m == 0 or k % n == 0:
+if (k % m == 0 or k % n == 0) and (m * n > k):
     print("Yes")
 else:
     print("No")              
