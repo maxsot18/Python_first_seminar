@@ -5,9 +5,12 @@
 # Input: 5
 # Output: yes 
 
-n = int(input("Enter a number: "))
 
-def simple_number (n):
-    if (n % 1 == 0 and n % n == 0):
-        return True
+
+def simple_number (num = 1):
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+n = int(input("Enter a number: "))
 print(simple_number(n))
